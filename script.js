@@ -28,7 +28,6 @@ let shadeHighlight = (e) => {
 }
 
 let clearGrid = () => {
-  console.log('clearing grid');
   const gridItems = document.querySelectorAll('.grid-item');
   gridItems.forEach((item) => {
     item.style.backgroundColor = '';
@@ -42,7 +41,6 @@ let changeSize = () => {
 }
 
 let buildGrid = (grid, gridSize, highlightStyle) => {
-  console.log('building grid');
   grid.innerHTML = '';
   for (let i = 0; i < (gridSize ** 2); i++) {
     const gridItem = document.createElement('div');
