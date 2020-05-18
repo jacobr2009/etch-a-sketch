@@ -35,7 +35,7 @@ let clearGrid = () => {
 }
 
 let changeSize = () => {
-  gridSize = parseInt(prompt('Enter a Value Between 2 and 100'));
+  gridSize = parseInt(prompt('Enter a Value Between 2 and 100')) || gridSize;
   buildGrid(grid, gridSize, highlightStyle);
   grid.style.setProperty('--grid-size', gridSize);
 }
